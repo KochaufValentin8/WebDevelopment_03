@@ -1,0 +1,238 @@
+/* Basisstyles, die für alle Bildschirmgrößen gelten */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding-bottom: 20px;
+}
+
+a {
+  color: #3A3A3A;
+  text-decoration: none;
+}
+
+p {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* ------ Hilfsklassen ------ */
+
+.standard-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.text-highlighted {
+  color: #1a1a2e;
+}
+
+.btn {
+  display: block;
+  font-size: 20px;
+  background-color: #A9A9A9;
+  color: #1a1a2e;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 15px 0px;
+}
+
+.btn:hover {
+  background-color: #1a1a2e;
+  color: white;
+}
+
+/* ------ Navigationsleiste ------ */
+
+#main-nav {
+  background-color: #3A3A3A;
+}
+
+#main-nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#main-nav h1 {
+  float: left;
+  color: #3A3A3A;
+  padding-top: 20px;
+}
+
+#main-nav a {
+  color: white;
+}
+
+#main-nav ul {
+  float: right;
+  list-style: none;
+}
+
+#main-nav ul li {
+  float: left;
+}
+
+#main-nav ul li a {
+  display: block;
+  font-size: 24px;
+  padding: 20px;
+  text-align: center;
+}
+
+#main-nav ul li a:hover {
+  background-color: #1a1a2e;
+  color: white;
+}
+
+/* ------ Willkommens Sektion ------ */
+
+#welcome {
+  background-image: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0,0.6)),url(../img/Banner_Light.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+#welcome:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#welcome .welcome-content {
+  float: none;
+  width: 100%;
+  color: white;
+  padding: 130px 50px;
+}
+
+#welcome .welcome-img {
+  float: none;
+  width: 100%;
+  padding-top: 40px;
+}
+
+#welcome .welcome-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#welcome .welcome-content h2 {
+  font-size: 40px;
+}
+
+/* ------ About ------ */
+
+#about {
+  background-color: #3A3A3A;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#about:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#about .about-content {
+  float: none;
+  width: 100%;
+  color: white;
+  padding: 20px;
+}
+
+#about .about-img {
+  float: none;
+  width: 100%;
+  padding: 20px;
+}
+
+#about .about-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#about .about-content h2 {
+  font-size: 40px;
+}
+
+/* ------ Skills ------ */
+
+#skills:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#skills .skill {
+  float: none;
+  width: 100%;
+  text-align: center;
+  padding: 35px;
+}
+
+#skills .material-symbols-outlined {
+  font-size: 100px;
+  color: #1a1a2e;
+}
+
+/* ------ Impressum ------ */
+
+#main-footer {
+  background-color: #3A3A3A;
+  min-height: 120px;
+  padding: 52px;
+}
+
+#main-footer p {
+  text-align: center;
+  color: white;
+}
+
+#main-footer p a {
+  color: white;
+}
+
+/* ------ Media Queries ------ */
+
+/* Anpassungen für größere Bildschirme (ab 768px) */
+@media only screen and (min-width: 768px) {
+  #welcome .welcome-content {
+    float: right;
+    width: 70%;
+  }
+
+  #welcome .welcome-img {
+    float: left;
+    width: 30%;
+  }
+
+  #about .about-content {
+    float: left;
+    width: 70%;
+  }
+
+  #about .about-img {
+    float: left;
+    width: 30%;
+  }
+
+  #skills .skill {
+    width: 50%;
+  }
+}
+
+/* Anpassungen für größere Bildschirme (ab 1024px) */
+@media only screen and (min-width: 1024px) {
+  #skills .skill {
+    width: 25%;
+  }
+}
